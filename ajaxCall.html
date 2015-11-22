@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Lazy Load HTML Content</title>
+		<link rel="stylesheet" type="text/css" href="product.css" />
+	</head>
+	<body id="body">
+		<div id="content" class="content">
+			<select name="first" id="first" onchange="ajaxCall()">
+				<option value="">Select One</option>
+				<option value="first">First</option>
+				<option value="second">Second</option>
+				<option value="third">Third</option>
+			</select>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<select name="second" id="second">
+				<option value = "">...</option>
+			</select>
+		</div>
+	</body>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+	var prevChoice = '';
+	</script>
+	<script src="ajaxCall.js"></script>
+</html>
